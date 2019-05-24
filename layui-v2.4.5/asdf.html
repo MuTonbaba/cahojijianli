@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script type="text/javascript" src="layui/layui.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         layui.use('carousel', function(){
+                          var carousel = layui.carousel;
+                          //建造实例
+                          carousel.render({
+                            elem: '#test1'
+                            ,width: '100%' //设置容器宽度
+                            ,height: '88%'
+                            ,arrow: 'always' //始终显示箭头
+                            //,anim: 'updown' //切换动画方式
+                          });
+                        });
+                    </script>
+                     <div class="layui-row layui-hide-md" style="height: 400px">
+                            <div class="layui-carousel" id="test1">
+                                    <div carousel-item>
+                                      <div><img src="layui\image\zylunbo1.jpg"></div>
+                                      <div><img src="layui\image\zylunbo2.jpg"></div>
+                                      <div><img src="layui\image\zylunbo3.jpg"></div>
+                                      <div><img src="layui\image\zylunbo4.jpg"></div>
+                                    </div>
+                            </div>
+                            
+                    </div>
+                            
+                  
+</body>
+</html>
